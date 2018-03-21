@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project 1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<h1>Project 1</h1>
+	<div class="form-box">
+		<form>
+			<label class="form-label">Company Name:</label>
+			<input type="text" id="CompanyName" class="form-input">
+			<br/>
+			<label class="blank"></label>
+			<span class="err" id="ComNameErr"></span>
+			<br/>
+			<label class="form-label">Founded Year:</label>
+			<input type="text" id="FoundedYear" class="form-input">
+			<br/>
+			<label class="blank"></label>
+			<span class="err" id="YearErr"></span>
+			<br/>
+			<label class="form-label">Founder Name:</label>
+			<input type="text" id="FounderName" class="form-input">
+			<br/>
+			<label class="blank"></label>
+			<span class="err" id="FNameErr"></span>
+			<br/>
+		</form>
+	</div>
+	<div class="buttons">
+		<button id="bt1" type="button" class="bt" onclick="SearchJson()">Search</button>
+		<button id="bt2" type="button" class="bt" onclick="Clear()">Clear</button>
+	</div>
+	<hr class="hr" />
+	<div id="table">
+		<table id="results"></table>
+	</div>
+</body>
+</html>
